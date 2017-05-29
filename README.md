@@ -58,3 +58,5 @@ indicates that Mark R. Diamond has written `40` annotations but says nothing abo
     5 mark_r_diamond,599
 indicates that there are `5` annotations (quite possibly by different annotators) on request-page number `5` and that request-page relates to an FOI request made by Mark R. Diamond.    
     
+### process-RtK-data.R
+`process-RtL-data.R` is a simple Gnu R script to read the output of `extractDatesTimes.pl` without needing having to dumpt the output into an intermediate file. The output of `extractDatesTimes.pl` is read into data-frame `d` which can then be used for further analysis. The initial part of the script deals with the creation of data-frame `d`; the latter part is a simple demo that uses the time data from each record to show when (i.e., what time of day) I am most likely to be using Right to Know.

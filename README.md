@@ -1,7 +1,7 @@
 # RightToKnowStatistics
 This collection of scripts, written in Perl and for the Bourne shell, is designed to present some interesting statistics about Freedom of Information requests that have been lodged using the [Right to Know](https://www.righttoknow.org.au) website.
 
-Each Freedom of Information request that is lodged using [Right to Know](https://www.righttoknow.org.au) occupies a single web-page, referred to here as a *request-page*. Additionally, each registered has a separate web-page referred to as a *user-page*. The scripts are designed to put a minimum load on the [Right to Know](https://www.righttoknow.org.au) server by downloading relevant web-pages to the local computer rather than trying to obtain the statistics by independent occasions of scraping the remote site.
+Each Freedom of Information request that is lodged using [Right to Know](https://www.righttoknow.org.au) occupies a single web-page, referred to here as a *request-page*. Additionally, each registered user has a separate web-page referred to as a *user-page*. The scripts are designed to put a minimum load on the [Right to Know](https://www.righttoknow.org.au) server by downloading relevant web-pages to the local computer rather than trying to obtain the statistics by independent occasions of scraping the remote site.
 What follows here is a description of the scripts and how to use them.
 
 ### getRightToKnowRequests.sh
@@ -59,4 +59,4 @@ indicates that Mark R. Diamond has written `40` annotations but says nothing abo
 indicates that there are `5` annotations (quite possibly by different annotators) on request-page number `5` and that request-page relates to an FOI request made by Mark R. Diamond.    
     
 ### process-RtK-data.R
-`process-RtL-data.R` is a simple Gnu R script to read the output of `extractDatesTimes.pl` without needing having to dumpt the output into an intermediate file. The output of `extractDatesTimes.pl` is read into data-frame `d` which can then be used for further analysis. The initial part of the script deals with the creation of data-frame `d`; the latter part is a simple demo that uses the time data from each record to show when (i.e., what time of day) I am most likely to be using Right to Know.
+`process-RtL-data.R` is a simple Gnu R script to read the output of `extractDatesTimes.pl` without needing having to dump the output into an intermediate file. The output of `extractDatesTimes.pl` is read into data-frame `d` which can then be used for further analysis. The initial part of the script deals with the creation of data-frame `d`; the latter part is a simple demo that uses the time data from each record to show when (i.e., what time of day) I am most likely to be using Right to Know.
